@@ -2,6 +2,8 @@
 
 **Live app: https://prism-ai-vip-brief.vercel.app**
 
+**Experiment Log: [docs/EXPERIMENT_LOG.md](docs/EXPERIMENT_LOG.md)**
+
 PRISM helps luxury PR professionals prepare for events. Enter what you know about a
 journalist, influencer, celebrity, stylist or VIP client, click **Generate VIP Brief**,
 and Claude (Anthropic) writes a structured brief:
@@ -73,6 +75,9 @@ Four test cases were run on the live production site.
 | ![Test 1](docs/screenshots/test1-minimal.png) | ![Test 2](docs/screenshots/test2-complete.png) |
 | **Test 3: Famous name, no details** | **Test 4: Prompt injection** |
 | ![Test 3](docs/screenshots/test3-famous-name.png) | ![Test 4](docs/screenshots/test4-injection.png) |
+
+The full analysis of these experiments, including the problems encountered and a personal
+reflection, is in the [Experiment Log](docs/EXPERIMENT_LOG.md).
 
 ## Tech stack
 
