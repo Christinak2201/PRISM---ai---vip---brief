@@ -1,13 +1,5 @@
 import { z } from "zod";
-
-export const CONTACT_CATEGORIES = [
-  "Journalist",
-  "Influencer",
-  "Celebrity",
-  "Stylist",
-  "VIP Client",
-  "Other",
-] as const;
+import { CONTACT_CATEGORIES } from "./categories";
 
 const optionalText = (max: number) =>
   z.string().trim().max(max).optional().default("");
