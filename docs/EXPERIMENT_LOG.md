@@ -1,6 +1,7 @@
 # Experiment Log: PRISM – AI VIP Brief Generator
 
 **Live app:** https://prism-ai-vip-brief.vercel.app
+
 **Repository:** https://github.com/Christinak2201/PRISM---ai---vip---brief
 
 ## 1. The idea and my hypothesis
