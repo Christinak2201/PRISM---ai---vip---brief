@@ -38,3 +38,12 @@ Open http://localhost:3000.
 The Anthropic API key is read only on the server (`process.env.ANTHROPIC_API_KEY`) and is
 never exposed to client code. Locally it lives in `.env.local` (gitignored). In
 production it is stored in Vercel environment variables.
+
+## How the AI call works
+
+- `src/app/api/generate-brief/route.ts`: server-side `POST` route. Validates the input,
+  calls Claude through the official Anthropic SDK, and returns the brief as JSON.
+- `src/lib/prompt.ts`: system prompt. Instructs Claude to use only the information
+  provided, write "Not provided" for empty sections, and list gaps under Missing Information.
+- `src/lib/brief.ts`: Zod schemas for the form input and the brief. The brief schema is sent
+  to the API as a structured output format, so the response always has the seven sections.
